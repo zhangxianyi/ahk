@@ -41,30 +41,23 @@
 
 /*
 ITEMS IN FAVORITES MENU <-- Do not change this string.
-nothing;
-0kill.skype;taskkill /f /im skype.exe
-1kill.qq;taskkill /f /im qq.exe
-Desktop      ; %A_Desktop%
-taskmgr;taskmgr
-Favorites    ; %A_Desktop%\..\Favorites
-My Documents ; %A_MyDocuments%
-gsnova;D:\skill\network\proxy\Google.App.Engine\snova\gsnova-0.22.0\gsnova.exe
-myFavoriteFolders;D:\skill\autohotkey\examples\myFavoriteFolders.ahk
-ahk.bat;D:\skill\autohotkey\ahk.bat
+nop;
 si.ahk;D:\skill\autohotkey\scenes\si\si.ahk
 EasyWindowDrag.ahk;D:\skill\autohotkey\scenes\EasyWindowDrag\EasyWindowDrag_(KDE).ahk
-scroll.ahk;D:\skill\autohotkey\scenes\mouse\scroll\scroll.ahk
-;events_intro;gvim --remote-silent "D:\skill\programming\jquery\books\JavaScript and jQuery-The Missing Manual\code\MM_JAVASCRIPT2E\chapter05\events_intro.html"
-i_view32;D:\skill\Apps\IrfanView\i_view32.exe
-Packetyzer;D:\skill\Apps\packetyzer\Packetyzer.exe
-vc9;"C:\WINDOWS\system32\cmd.exe" /k ""C:\Program Files\Microsoft Visual Studio 9.0\VC\vcvarsall.bat"" x86
-winactive;D:\skill\autohotkey\scenes\WinActive\WinActive.ahk
-nothing;
-msys;D:\skill\Apps\MinGW\msys\1.0\msys.bat
-FavoriteFolders;D:\skill\autohotkey\examples\myFavoriteFolders.ahk
-codeblocks;D:\skill\Apps\codeblocks\CB_20130412_rev8982_win32\codeblocks.exe
+FavoriteFolders;D:\skill\autohotkey\scenes\FavoriteFolders\myFavoriteFolders.ahk
+gsnova;D:\skill\network\proxy\Google.App.Engine\snova\gsnova-0.22.0\gsnova.exe
 */
-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;winactive;D:\skill\autohotkey\scenes\WinActive\WinActive.ahk
+;0kill.skype;taskkill /f /im skype.exe
+;1kill.qq;taskkill /f /im qq.exe
+;Desktop      ; %A_Desktop%
+;taskmgr;taskmgr
+;Favorites    ; %A_Desktop%\..\Favorites
+;My Documents ; %A_MyDocuments%
+;msys;D:\skill\Apps\MinGW\msys\1.0\msys.bat
+;codeblocks;D:\skill\Apps\codeblocks\CB_20130412_rev8982_win32\codeblocks.exe
+;vc9;"C:\WINDOWS\system32\cmd.exe" /k ""C:\Program Files\Microsoft Visual Studio 9.0\VC\vcvarsall.bat"" x86
 
 ; END OF CONFIGURATION SECTION
 ; Do not make changes below this point unless you want to change
@@ -131,6 +124,7 @@ return
 
 
 ;----Display the menu
+;for totalcmd. we exclude this keys because we need the right context menu.
 #IfWinNotActive, ahk_class TTOTAL_CMD
 +RButton::
 Menu, Favorites, show

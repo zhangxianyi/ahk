@@ -105,6 +105,7 @@ return
 	}
 	else
 	{
+		Msgbox
 		SendMessage, 0x114, 1, 0, , ahk_id %hw_m_target%
 	}
 return
