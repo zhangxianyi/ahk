@@ -46,6 +46,7 @@ si.ahk;D:\skill\autohotkey\scenes\si\si.ahk
 EasyWindowDrag.ahk;D:\skill\autohotkey\scenes\EasyWindowDrag\EasyWindowDrag_(KDE).ahk
 FavoriteFolders;D:\skill\autohotkey\scenes\FavoriteFolders\myFavoriteFolders.ahk
 gsnova;D:\skill\network\proxy\Google.App.Engine\snova\gsnova-0.22.0\gsnova.exe
+MouseGestureL;D:\skill\autohotkey\scenes\mouse\gesture\MouseGestureL\v119\MouseGestureL.ahk
 */
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;winactive;D:\skill\autohotkey\scenes\WinActive\WinActive.ahk

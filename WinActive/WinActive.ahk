@@ -84,6 +84,7 @@ return
 
 !+l::
 !+a::
+#a::
 ;myWinActive("ahk_class Vim", "d:\PortableApps\vim\vim74\gvim.exe")
 myWinActive("ahk_class Vim", "d:\PortableApps\vim\vim73\gvim.exe")
 return
@@ -156,7 +157,6 @@ myWinActive("ahk_class TTOTAL_CMD", "D:\skill\Apps\totalcmd\TOTALCMD.EXE")
 return
 
 #q::
-#a::
 myWinActive("ahk_class EVERYTHING", "D:\skill\Apps\Everything\Everything.exe")
 return
 

@@ -49,19 +49,7 @@ return
 	MouseGetPos, m_x, m_y, m_win
 	Wingetclass, m_class, ahk_id %m_win%
 	hw_m_target := DllCall( "WindowFromPoint", "int", m_x, "int", m_y )
-	if(m_class == "SunAwtFrame")
-	{
-		Wingetclass, cur_class, A
-		if(cur_class == m_class)
-		{
-			send, +{wheelup}
-		}
-		else
-		{
-			Controlsend, , {shift}{wheelup}, ahk_id %m_win%
-		}
-	}
-	else if m_class == "XLMAIN"
+	if m_class == "XLMAIN"
 	{
 		ComObjError(false)
 		ComObjActive("Excel.Application").ActiveWindow.SmallScroll(0,0,0,1)  ; Scroll left.
@@ -81,19 +69,7 @@ return
 	MouseGetPos, m_x, m_y, m_win
 	Wingetclass, m_class, ahk_id %m_win%
 	hw_m_target := DllCall( "WindowFromPoint", "int", m_x, "int", m_y )
-	if(m_class == "SunAwtFrame")
-	{
-		Wingetclass, cur_class, A
-		if(cur_class == m_class)
-		{
-			send, +{wheeldown}
-		}
-		else
-		{
-			Controlsend, , {shift}{wheeldown}, ahk_id %m_win%
-		}
-	}
-	else if m_class == "XLMAIN"
+	if m_class == "XLMAIN"
 	{
 		ComObjError(false)
 		ComObjActive("Excel.Application").ActiveWindow.SmallScroll(0,0,1,0)  ; Scroll right.
@@ -105,7 +81,6 @@ return
 	}
 	else
 	{
-		Msgbox
 		SendMessage, 0x114, 1, 0, , ahk_id %hw_m_target%
 	}
 return
