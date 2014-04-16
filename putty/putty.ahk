@@ -68,11 +68,11 @@ return
 send *{space}
 return
 
-+wheeldown::
+^wheeldown::
 	send {down}
 return
 
-+wheelup::
+^wheelup::
 	send {up}
 return
 

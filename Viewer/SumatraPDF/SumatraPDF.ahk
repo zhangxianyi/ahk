@@ -36,15 +36,15 @@ F4::
 	return
 
 
-Alt::DoubleTap("^^",250)
+;Alt::DoubleTap("^^",250)
 
-DoubleTap(key,TimeVar=300) 
-{
-	If (A_ThisHotkey==A_PriorHotkey && A_TimeSincePriorHotkey < TimeVar)
-	Send %key%
-	else
-	Send {%A_ThisHotkey%}
-	return
-}
+;DoubleTap(key,TimeVar=300) 
+;{
+	;If (A_ThisHotkey==A_PriorHotkey && A_TimeSincePriorHotkey < TimeVar)
+	;Send %key%
+	;else
+	;Send {%A_ThisHotkey%}
+	;return
+;}
 
 #if

@@ -1,8 +1,4 @@
 #IfWinactive ahk_class Vim
-#wheelup::
-^wheelup::
-send !{+}
-return
 
 +wheelup::
 send zh
@@ -12,10 +8,20 @@ return
 send zl
 return
 
+#wheelup::
+	send {up}
+	return
 #wheeldown::
+	send {down}
+	return
+
+^wheelup::
+	send !{+}
+	return
+
 ^wheeldown::
-send !{_}
-return
+	send !{_}
+	return
 
 ^1::
 send 1gt

@@ -1,9 +1,9 @@
 #singleinstance force
 SetTitleMatchMode, 2
 
-GroupAdd, tty_group, ahk_class PuTTY
-GroupAdd, tty_group, ahk_class mintty
-GroupAdd, tty_group, ahk_class Wan_WidgetWin_0
+;GroupAdd, tty_group, ahk_class PuTTY
+;GroupAdd, tty_group, ahk_class mintty
+;GroupAdd, tty_group, ahk_class Wan_WidgetWin_0
 
 groupadd, scroll_exclusion_grp, Settings - TortoiseGit
 
@@ -44,7 +44,7 @@ WheelDown::
 return
 #if
 
-#If !WinActive("ahk_group scroll_exclusion_grp") and !WinActive("ahk_group tty_group")
+;#If !WinActive("ahk_group scroll_exclusion_grp") and !WinActive("ahk_group tty_group")
 +Wheelup::
 	MouseGetPos, m_x, m_y, m_win
 	Wingetclass, m_class, ahk_id %m_win%
@@ -84,4 +84,4 @@ return
 		SendMessage, 0x114, 1, 0, , ahk_id %hw_m_target%
 	}
 return
-#if
+;#if

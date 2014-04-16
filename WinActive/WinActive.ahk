@@ -170,6 +170,6 @@ return
 
 !+x:: ;dict
 !+j::
-myWinActive("金山词霸", "C:\Program Files\Kingsoft\PowerWordDict\XDict.exe",0, 2, 1)
+myWinActive("金山词霸", "D:\skill\Apps\Kingsoft\PowerWordDict\XDict.exe",0, 2, 1)
 ; myWinActive("ahk_class QWidget", "D:\skill\Apps\Calibre\ebook-viewer.exe")
 return

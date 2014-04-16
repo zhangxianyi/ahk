@@ -95,48 +95,6 @@ return
 ^Wheelup::
 send !+,
 return
-
-; +Rbutton::
-; send !'
-; return
-
-~LButton::
-; Detect double click code: http://www.autohotkey.com/forum/viewtopic.php?p=62779#62779
-Loop {
-    LButtonDown := GetKeyState("LButton","P")
-    If (!LButtonDown)
-    Break
-}
-
-WaitTime:=DllCall( "GetDoubleClickTime" )/1000
-KeyWait, LButton, D T%WaitTime%
-If errorlevel=0
-GoSub, OnDoubleClick
-Return
-
-OnDoubleClick:
-if(!b_dbclick_jump)
-    return
-ControlGetFocus, which_control, A
-; Msgbox, %which_control%
-If InStr(which_control, "si_Listbox")
-{
-    ; Msgbox, "hit"
-    return
-}
-
-send ^{=}
-; winwaitactive, Multiple Locations, , 0.3
-; ifwinactive, Multiple Locations
-; {
-    ;     send !{s}
-    ;     sleep, 100
-    ;     if WinActive("Multiple Locations")
-    ;     {
-	;         send !{s}
-	;     }
-	; }
-return
 #if
 
 #ifwinactive Browse Project Symbols
