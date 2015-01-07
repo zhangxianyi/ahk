@@ -14,7 +14,14 @@
     if queryEnum[process]
     {
 	clipboard = % process.CommandLine
-        MsgBox 0, Command line, % process.CommandLine
+        ;MsgBox 0, Command line, % process.CommandLine
+	stringreplace, newc, clipboard, `"` `", `"`n`"
+	StringSplit, MyArray, newc, `n
+        if % MyArray0 == 2
+	{
+		clipboard  = % MyArray2
+	}
+	MsgBox 0, Command line, % clipboard
     }
     else
         MsgBox Process not found!

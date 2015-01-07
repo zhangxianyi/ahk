@@ -43,10 +43,12 @@
 ITEMS IN FAVORITES MENU <-- Do not change this string.
 nop;
 si.ahk;D:\skill\autohotkey\scenes\si\si.ahk
-EasyWindowDrag.ahk;D:\skill\autohotkey\scenes\EasyWindowDrag\EasyWindowDrag_(KDE).ahk
+EasyWindowDrag.ahk;D:\skill\Apps\AutoHotkey\scripts\EasyWindowDrag\EasyWindowDrag_(KDE).ahk
 FavoriteFolders;D:\skill\autohotkey\scenes\FavoriteFolders\myFavoriteFolders.ahk
 gsnova;D:\skill\network\proxy\Google.App.Engine\snova\gsnova-0.22.0\gsnova.exe
-MouseGestureL;D:\skill\autohotkey\scenes\mouse\gesture\MouseGestureL\v119\MouseGestureL.ahk
+MouseGestureL;D:\skill\Apps\AutoHotkey\scripts\mouse\gesture\MouseGestureL\v130\MouseGestureL\MouseGestureL.ahk
+scroll;D:\skill\Apps\AutoHotkey\scripts\mouse\scroll\scroll.ahk
+ahk.bat;D:\skill\Apps\AutoHotkey\ahk.bat
 */
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;winactive;D:\skill\autohotkey\scenes\WinActive\WinActive.ahk

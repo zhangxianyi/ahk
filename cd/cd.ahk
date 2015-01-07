@@ -1,4 +1,4 @@
-#c::
+#+c::
 Drive, Eject
 ; If the command completed quickly, the tray was probably already ejected.
 ; In that case, retract it:

@@ -1,7 +1,8 @@
 
+GroupAdd, cmd_group, ahk_class ConsoleWindowClass
+GroupAdd, cmd_group, ahk_class VirtualConsoleClass
 ; ---------------------------------------------------------
 GroupAdd, chm_group, ahk_class HH Parent
-GroupAdd, cmd_group, ahk_class ConsoleWindowClass
 
 ; ---------------------------------------------------------
 groupadd, alt_v_paste, ahk_class #32770
@@ -33,6 +34,7 @@ groupadd, alt_x_exclusion, ahk_class si_Frame
 groupadd, alt_x_inclusion, DownThemAll!
 groupadd, alt_x_inclusion, ahk_class classFoxitReader
 groupadd, alt_x_inclusion, ahk_class Chrome_WidgetWin_1
+groupadd, alt_x_inclusion, ahk_class EVERYTHING
 
 ; ---------------------------------------------------------
 groupadd, alt_q_inclusion,  - DownThemAll!
@@ -73,4 +75,5 @@ GroupAdd, alt_c_inclusion, ahk_class AcrobatSDIWindow
 
 GroupAdd, ms_window_group, ahk_class CabinetWClass
 GroupAdd, ms_window_group, ahk_class FM
+GroupAdd, ms_window_group, ahk_class HH Parent
 

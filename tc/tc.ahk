@@ -7,7 +7,7 @@ clipboard = %clipboard%\
 return
 
 MButton::
-send {bs}
+send {Lbutton}{bs}
 return
 
 +RButton::

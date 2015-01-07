@@ -2,7 +2,9 @@
 !c::
 	send ^c
 	return
-
+!x::
+	send {esc}
+	return
 ; Esc::
 	; return
 
@@ -12,16 +14,6 @@
 
 !z::
 	send ^z
-	return
-
-!1::
-	send !1
-	Msgbox, %clipboard%
-	return
-
-!2::
-	send !2
-	Msgbox, %clipboard%
 	return
 
 !3::

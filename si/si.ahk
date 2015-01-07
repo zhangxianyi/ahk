@@ -2,7 +2,6 @@
 
 #ifwinactive ahk_class si_Frame
 b_rbutton_goback:=1
-b_dbclick_jump:=1
 
 !m::
 send ^{m}
@@ -14,14 +13,6 @@ if(b_rbutton_goback)
 Msgbox, right go back is on
 else
 Msgbox, right go back is off
-return
-
-!f10::
-b_dbclick_jump := !b_dbclick_jump
-if(b_dbclick_jump)
-Msgbox, double_click_jump is on
-else
-Msgbox, double_click_jump is off
 return
 
 ; !+k::

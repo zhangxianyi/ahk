@@ -7,3 +7,6 @@ return
 ^!r::
 winset, AlwaysOnTop, Toggle, A
 return
+
+^space::#space
+return
